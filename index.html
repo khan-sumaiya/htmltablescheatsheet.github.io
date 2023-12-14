@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <title>HTML TABLES CHEATSHEET</title>
+    <!--HEADER-->
+    <header>
+        <div id="pagetitle">
+            <h1>HMTL TABLES CHEATSHEET</h1>
+        </div>
+    </header>
+    <!--CONTENT-->
+    <div id="content">
+        <h2>TAGS & THEIR USE:</h2>
+        <br>
+        <!-- <table> -->
+        <span class="tags">&#60table&#62</span>
+        <br>
+        <ul class="definitions">
+            <li>the tags used to create a table are enclosed within &#60table&#62&#60/table&#62 tags.</li>
+        </ul>
+        <br>
+        <!-- <td> -->
+        <span class="tags">&#60td&#62</span>
+        <ul class="definitions">
+            <li>table cell & stands for table data.</li>
+            <li>Table data/text is enclosed within &#60td&#62&#60/td&#62 tags.</li>
+        </ul>
+        <br>
+        <!-- <tr> -->
+        <span class="tags">&#60tr&#62</span>
+        <ul class="definitions">
+            <li>table rows.</li>
+            <li>&#60tr&#62&#60/tr&#62 tags are used to add a table row and in order to add text into this particular
+                cell
+                you use &#60td&#62&#60/td&#62 tags. </li>
+            <li>For every &#60td&#62&#60/td&#62 tags you include within the &#60tr&#62&#60/tr&#62 tags, it will create a
+                column within that row. </li>
+        </ul>
+        <br>
+        <!-- <th> -->
+        <span class="tags">&#60th&#62</span>
+        <ul class="definitions">
+            <li>table header</li>
+            <li>The text within the &#60th&#62&#60/th&#62 tags is bold and centered. However, it can be changed with
+                CSS.</li>
+        </ul>
+        <br>
+        <!-- <thead> -->
+        <span class="tags">&#60thead&#62</span>
+        <ul class="definitions">
+            <li>the header content in a table.</li>
+            <li>every &#60tr&#62 element within &#60thead&#62&#60/thead&#62 tags, will be grouped into the header
+                content of the table.</li>
+        </ul>
+        <br>
+        <!-- <tbody> -->
+        <span class="tags">&#60tbody&#62</span>
+        <ul class="definitions">
+            <li>the body content in a table.</li>
+            <li>every &#60tr&#62 element within &#60tbody&#62&#60/tbody&#62 tags, will be grouped into the body content
+                of the table.</li>
+        </ul>
+        <br>
+        <!-- <tfoot> -->
+        <span class="tags">&#60tfoot&#62</span>
+        <ul class="definitions">
+            <li>the footer content in a table</li>
+            <li>every &#60tr&#62 element within &#60tfoot&#62&#60/tfoot&#62 tags, will be grouped into the footer
+                content of the table.</li>
+        </ul>
+        <br>
+        <!-- <caption> -->
+        <span class="tags">&#60caption&#62</span>
+        <ul class="definitions">
+            <li>table caption.</li>
+            <li>aka the table's title.</li>
+        </ul>
+        <br>
+        <!-- <colgroup> -->
+        <span class="tags">&#60colgroup&#62</span>
+        <ul class="definitions">
+            <li> a group of one or more columns in a table for formatting.</li>
+            <li> is used along with &#60col&#62.</li>
+        </ul>
+        <br>
+        <!-- <col> -->
+        <span class="tags">&#60col&#62</span>
+        <ul class="definitions">
+            <li>column properties for each column within a &#60colgroup&#62 element.</li>
+            <li> is used along with &#60colgroup&#62&#60/colgroup&#62.</li>
+        </ul>
+        <br>
+        <br>
+        <p>
+        <h4 class="subtitle"><u> Using &#60colgroup&#62 and &#60col&#62:</u></h3>
+            <br>
+            To style specific columns of a table, use the <span class="tag">&#60colgroup&#62s</span>
+            and <span class="tag">&#60col&#62</span> tags.
+            <br>
+            <br>
+            &hybull; &#60colgroup&#62 = container for column specifications.
+            <br>
+            &hybull; &#60col&#62 specifies each group of column/s + is a self-closing tag.
+            <br>
+            &hybull; <span class="attribute">span</span> specifies number of columns that get the style.
+            <br>
+            &hybull; <span class="attribute">style</span> specifies the style (CSS).
+            <br>
+            <br>
+            For example:
+            <br>
+            <br>
+            <span class="tag">&#60table&#62</span>
+            <br>
+            <span class="note">*first column*</span>
+            <br>
+            <span class="tag">&#60colgroup&#62</span>
+            <br>
+            <span class="tag">&#60col</span> <span class="attribute">span</span>="1" <span
+                class="attribute">style</span>="background-color: rgb(152, 174, 204);">
+            <br>
+            <span class="tag"> &#60/colgroup&#62</span>
+            <br>
+            <br>
+            <span class="note">*last 3 columns*</span>
+            <br>
+            <span class="tag"> &#60colgroup&#62</span>
+            <br>
+            <span class="tag">&#60col</span> <span class="attribute">span</span>="4" <span
+                class="attribute">style</span>="background-color: rgb(34, 65, 91);">
+            <br>
+            <span class="tag">&#60/colgroup&#62</span>
+            <br>
+            . . .
+            <br>
+            <span class="tag">&#60/table&#62</span>
+            <br>
+            </p>
+            <br>
+            <br>
+            <table id="tabletags">
+                <caption> WRITE TABLE CAPTION USING &#60caption&#62 TAGS</caption>
+                <colgroup>
+                    <col span="1" style="background-color: rgb(152, 174, 204);">
+                </colgroup>
+                <colgroup>
+                    <col span="4" style="background-color: rgb(34, 65, 91);">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><i>HEADER</i></th>
+                        <th>&#60th&#62</th>
+                        <th>&#60th&#62</th>
+                        <th>&#60th&#62</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i>BODY</i></td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                    </tr>
+                    <tr>
+                        <td><i>BODY</i></td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                    </tr>
+                    <tr>
+                        <td><i>BODY</i></td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                        <td>&#60td&#62</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td><i>FOOTER</i></td>
+                    <td>&#60td&#62</td>
+                    <td>&#60td&#62</td>
+                    <td>&#60td&#62</td>
+                </tfoot>
+            </table>
+            <br>
+            <br>
+            <h4 class="subtitle"><u>CSS Properties for &#60col&#62</u></h4>
+            <p> These properties are used under the <span class="attribute">style</span> attribute. When applied to the
+                selected columns using &#60col&#62, these properties will only be shown the the chosen columns.
+                <br>
+                <br>
+            <ol>
+                <li><span class="property">width</span> property</li>
+                <li><span class="property">visibility</span> property</li>
+                <li><span class="property">background</span> property</li>
+                <li><span class="property">border</span> property</li>
+            </ol>
+            <br>
+            <br>
+            <p>
+                <b><u>Empty Colgroups</u></b>
+                <br>
+                If you want to style columns in the middle of the table, insert an empty &#60col&#62 element without
+                styling it for the preceeding columns.
+                <br>
+                <br>
+                For example:
+                <br>
+                <br>
+                <span class="tag">&#60table&#62</span>
+                <br>
+                <span class="note">*first column*</span>
+                <br>
+                <span class="tag">&#60colgroup&#62</span>
+                <br>
+                <span class="tag">&#60col</span> <span class="attribute">span</span>="1">
+                <br>
+                <span class="tag"> &#60/colgroup&#62</span>
+                <br>
+                <br>
+                <span class="note">*middle 2 columns*</span>
+                <br>
+                <span class="tag"> &#60colgroup&#62</span>
+                <br>
+                <span class="tag">&#60col</span> <span class="attribute">span</span>="2" <span
+                    class="attribute">style</span>="background-color: rgb(34, 65, 91);">
+                <br>
+                <span class="tag">&#60/colgroup&#62</span>
+                <br>
+                . . .
+                <br>
+                <span class="tag">&#60/table&#62</span>
+                <br>
+                <br>
+            </p>
+            <table id="emptycolgroups">
+                <colgroup>
+                    <col span="1">
+                    <col span="2" style="background-color: rgb(34, 65, 91);">
+                </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Height (cm)</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Khan</td>
+                    <td>23</td>
+                    <td>1.75</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Smith</td>
+                    <td>25</td>
+                    <td>1.80</td>
+                </tr>
+                <tr>
+                    <td>Chloe</td>
+                    <td>Wright</td>
+                    <td>21</td>
+                    <td>1.63</td>
+                </tr>
+            </table>
+            </p>
+            <br>
+            <br>
+            <p>
+                <b><u>Hiding Colgroups</u></b>
+                <br>
+                If you want to hide columns, set the <span class="property">visibility</span> to <span
+                    class="values">collapse</span>.
+                <br>
+                <br>
+                For example:
+                <br>
+                <br>
+                <span class="tag">&#60table&#62</span>
+                <br>
+                <span class="note">*first column*</span>
+                <br>
+                <span class="tag">&#60colgroup&#62</span>
+                <br>
+                <span class="tag">&#60col</span> <span class="attribute">span</span>="1">
+                <br>
+                <span class="tag"> &#60/colgroup&#62</span>
+                <br>
+                <br>
+                <span class="note">*middle 2 columns*</span>
+                <br>
+                <span class="tag"> &#60colgroup&#62</span>
+                <br>
+                <span class="tag">&#60col</span> <span class="attribute">span</span>="2" <span
+                    class="attribute">style</span>="visibility: collapse">
+                <br>
+                <span class="tag">&#60/colgroup&#62</span>
+                <br>
+                . . .
+                <br>
+                <span class="tag">&#60/table&#62</span>
+                <br>
+                <br>
+                Notice how the "Last Name" and "Age" columns aren't visible?
+                <br>
+                <br>
+            </p>
+            <table id="hidingcolumns">
+                <colgroup>
+                    <col span="1">
+                    <col span="2" style="visibility: collapse;">
+                </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Height (cm)</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Khan</td>
+                    <td>23</td>
+                    <td>1.75</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Smith</td>
+                    <td>25</td>
+                    <td>1.80</td>
+                </tr>
+                <tr>
+                    <td>Chloe</td>
+                    <td>Wright</td>
+                    <td>21</td>
+                    <td>1.63</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            </p>
+            <h2>STYLING HTML TABLES USING CSS:</h2>
+            <br>
+            <h3>1. Adding a Border</h3>
+            <br>
+            <p>
+                In order to add a border, use the <span class="property"> border</span> property on table, th, and td
+                elements.
+                <br>
+                <br>
+                <snap class="elements">table, th, td</snap> {
+                <br>
+                <snap class="property">border</snap> : <span class="values"> [thickness of border] [border style]
+                    [border color]</span>; }
+                <br>
+                <br>
+                For example:
+                <br>
+                <b>table, th, td {
+                    <br>
+                    border : 1px solid black; </b>
+                <br>
+                width: 500px;<br>
+                height: 50px;<br>
+                text-align: center;<br>
+                }
+                <br>
+                <br>
+            </p>
+            <table id="addingborder">
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Khan</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Smith</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Chloe</td>
+                    <td>Wright</td>
+                    <td>21</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>2. Collapsed Table Border</h3>
+            <br>
+            <p>
+                If you want a single bordered table, set the CSS <span class="property"> border-collapse</span> property
+                to <span class="values">collapse</span>.
+                <br>
+                <br>
+                <snap class="elements">table, th, td</snap> {
+                <br>
+                <snap class="property">border</snap>: <span class="values"> [thickness of border] [border style] [border
+                    color]</span>;
+                <br>
+                <snap class="property">border-collapse</snap>: <span class="values"> collapse </span> ;}
+                <br>
+                <br>
+                For example:<br>
+                <b>table, th, td {<br>
+                    border : 1px solid black; </b>
+                <br>
+                <b>border-collapse: collapsed;</b>
+                <br>
+                width: 500px;<br>
+                height: 50px;<br>
+                text-align: center; }
+                <br>
+                <br>
+                This will create a table like this:
+            </p>
+            <br>
+            <table id="collapsedtable">
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>Khan</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Smith</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Chloe</td>
+                    <td>Wright</td>
+                    <td>21</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>3. Styling Table Borders</h3>
+            <br>
+            <h3 class="subtitle"><u>Invisible borders</u></h3>
+            <br>
+            <p>
+                If you want an invisible border table you could set the <span class="property">background-color</span>
+                to the color of choice
+                and set the <span class="property">border</span> color to <span class="values">white</span>.
+                <br>
+                <br>
+                <snap class="elements">table, th, td</snap> {
+                <br>
+                <snap class="property">border</snap>: <span class="values"> [thickness of border] [border style]
+                    white</span>;
+                <br>
+                border-collapse: collapse ;}
+                <br>
+                <br>
+                <snap class="elements"> th, td</snap> {
+                <br>
+                <snap class="property">background-color</snap>: <span class="values"> [color of your choice]</span>
+                ;}
+                <br>
+                <br>
+                For example:<br>
+                <b>table, th, td {
+                    <br>
+                    border: 1px solid white;</b>
+                <br>
+                border-collapse: collapse;<br>
+                }
+                <br>
+                <b>th, td {
+                    <br>
+                    background-color: #96D4D4;</b>
+                <br>
+                }
+                <br>
+                <br>
+                This will create a table like this:
+            </p>
+            <br>
+            <table class="invisibleborder">
+                <tr>
+                    <th class="invisibleborder">Name</th>
+                    <th class="invisibleborder">Last Name</th>
+                    <th class="invisibleborder">Age</th>
+                </tr>
+                <tr>
+                    <td class="invisibleborder">Ali</td>
+                    <td class="invisibleborder">Khan</td>
+                    <td class="invisibleborder">23</td>
+                </tr>
+                <tr>
+                    <td class="invisibleborder">Jack</td>
+                    <td class="invisibleborder">Smith</td>
+                    <td class="invisibleborder">25</td>
+                </tr>
+                <tr>
+                    <td class="invisibleborder">Chloe</td>
+                    <td class="invisibleborder">Wright</td>
+                    <td class="invisibleborder">21</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3 class="subtitle"><u>Round Table Borders</u></h3>
+            <br>
+            <p>
+                To get rounded table corners, use the <span class="property">border-radius</span> property.
+                <br><br>
+                <snap class="elements">table, th, td</snap> {
+                <br>
+                <snap class="property">border</snap>: <span class="values"> [thickness of border] [border style] [border
+                    color]</span>;
+                <br>
+                <snap class="property">border-radius</snap>: <snap class="values"> [radius of corners] </snap>
+                ;}<br><br>
+                For example:<br>
+                <b>table, th, td {<br>
+                    border: 1px solid black;<br>
+                    border-radius: 10px;</b><br>
+                width: 500px;<br>
+                height: 50px;<br>
+                text-align: center;<br>
+                }<br>
+                <br>
+                This will create a table like this:
+            </p>
+            <br>
+            <table class="roundcorner">
+                <tr>
+                    <th class="roundcorner">Name</th>
+                    <th class="roundcorner">Last Name</th>
+                    <th class="roundcorner">Age</th>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Ali</td>
+                    <td class="roundcorner">Khan</td>
+                    <td class="roundcorner">23</td>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Jack</td>
+                    <td class="roundcorner">Smith</td>
+                    <td class="roundcorner">25</td>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Chloe</td>
+                    <td class="roundcorner">Wright</td>
+                    <td class="roundcorner">21</td>
+                </tr>
+            </table>
+            <br>
+            To remove the border around the table, exclude <span class="element">table</span>.
+            <br>
+            <br>
+            For example:<br>
+            <b>th, td {<br>
+                border: 1px solid black;<br>
+                border-radius: 10px;</b><br>
+            width: 500px;<br>
+            height: 50px;<br>
+            text-align: center;<br>
+            }<br>
+            <br>
+            <table>
+                <tr>
+                    <th class="roundcorner">Name</th>
+                    <th class="roundcorner">Last Name</th>
+                    <th class="roundcorner">Age</th>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Ali</td>
+                    <td class="roundcorner">Khan</td>
+                    <td class="roundcorner">23</td>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Jack</td>
+                    <td class="roundcorner">Smith</td>
+                    <td class="roundcorner">25</td>
+                </tr>
+                <tr>
+                    <td class="roundcorner">Chloe</td>
+                    <td class="roundcorner">Wright</td>
+                    <td class="roundcorner">21</td>
+                </tr>
+            </table>
+            <br>
+            <h3 class="subtitle"><u> Table Border Styles</u></h3>
+            <br>
+            <p>
+                Other than the "solid" <span class="property">border-style</span>, other styles include:
+                <br>
+                <br>
+            <ul id="borders">
+                <li>solid: <div class="borderstyles" id="solid"></div>
+                </li>
+                <br>
+                <li>dashed: <div class="borderstyles" id="dashed"></div>
+                </li>
+                <br>
+                <li>dotted: <div class="borderstyles" id="dotted"></div>
+                </li>
+                <br>
+                <li>double: <div class="borderstyles" id="double"></div>
+                </li>
+                <br>
+                <li>groove: <div class="borderstyles" id="groove"></div>
+                </li>
+                <br>
+                <li>ridge: <div class="borderstyles" id="ridge"></div>
+                </li>
+                <br>
+                <li>inset: <div class="borderstyles" id="inset"></div>
+                </li>
+                <br>
+                <li>outset: <div class="borderstyles" id="outset"></div>
+                </li>
+                <br>
+                <li>none: <div class="borderstyles" id="none"></div>
+                </li>
+                <br>
+                <li>hidden: <div class="borderstyles" id="hidden"></div>
+                </li>
+                <br>
+            </ul>
+            </p>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div id="end">
+            <div>
+                <p id="credits">Created by Sumaiya K.</h2>
+                </p>
+            </div>
+    </footer>
+</body>
+
+</html>
