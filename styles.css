@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(14, 14, 59);
+
+}
+
+#pagetitle {
+    background-color: rgb(14, 14, 59);
+    height: 70px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#pagetitle h1 {
+    line-height: 70px;
+}
+
+
+#content {
+    margin: auto;
+    width: 70%;
+    background-color: white;
+    padding: 15px;
+}
+
+.subtitle {
+    color: rgb(72, 72, 116);
+}
+
+h2 {
+    text-shadow: 2px 3px 5px gray;
+}
+
+.tags {
+    font-weight: bold;
+    color: rgb(14, 14, 59);
+
+}
+
+.elements {
+    color: brown;
+}
+
+.property {
+    color: red;
+}
+
+.values {
+    color: blue;
+}
+
+table,
+th,
+td {
+    width: 330px;
+    height: 50px;
+    text-align: center;
+}
+
+#adddingborder,
+th,
+td {
+    border: 1px solid black;
+}
+
+#collapsedtable,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.invisibleborder {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: #96D4D4;
+}
+
+.roundcorner {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 330px;
+    height: 50px;
+    text-align: center;
+}
+
+#borders {
+    padding-left: 50px;
+}
+
+.borderstyles {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(183, 183, 243);
+    display: inline-table;
+}
+
+#solid {
+    border: 3px solid rgb(14, 14, 59);
+}
+
+#dashed {
+    border: 3px dashed rgb(14, 14, 59);
+}
+
+#dotted {
+    border: 3px dotted rgb(14, 14, 59);
+}
+
+#double {
+    border: 3px double rgb(14, 14, 59);
+}
+
+#groove {
+    border: 3px groove gray;
+}
+
+#ridge {
+    border: 3px ridge gray;
+}
+
+#inset {
+    border: 3px inset gray;
+}
+
+#outset {
+    border: 3px outset gray;
+}
+
+#none {
+    border: 3px none rgb(14, 14, 59);
+}
+
+#hidden {
+    border: 3px hidden rgb(14, 14, 59);
+}
+
+.definitions {
+    padding-left: 20px;
+}
+
+caption {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(72, 72, 116);
+}
+
+#tabletags {
+    border-collapse: collapse;
+}
+
+#tabletags thead {
+    border: 4px solid blue;
+}
+
+#tabletags tbody {
+    border: 4px solid rgb(0, 115, 128);
+}
+
+#tabletags tfoot {
+    border: 4px solid rgb(115, 0, 128);
+}
+
+
+.tag {
+    color: #1274ad;
+}
+
+.note {
+    color: green;
+}
+
+.attribute {
+    color: rgb(195, 31, 105);
+}
+
+#credits {
+    text-align: center;
+    color: white;
+    text-shadow: none;
+    padding: 5px;
+    font-size: 10px;
+}
+
+ol{
+    padding-left: 20px;
+}
+
+#emptycolgroups{
+border-collapse: collapse;
+}
+
+#hidingcolumns{
+    border-collapse: collapse;
+}
